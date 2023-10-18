@@ -1,0 +1,124 @@
+.active a{
+    color: red;
+}
+main{
+    overflow: hidden;
+}
+ main p{
+    text-align: center;
+ }
+.desc-section {
+    height: 25vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.desc-section h1{
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.desc-section h3{
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+
+.extra-detail{
+    margin-bottom: 25px;
+}
+
+.extra-detail a{
+    text-decoration: none;
+    color: red;
+}
+.upload-wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+    margin: 0 0 20px 20px;
+}
+
+.upload-cloud{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    color:var(--frtcolor);
+    background-color: red;
+    padding: 30px 70px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 15px;
+}
+.upload-cloud img{
+    width: 2.5rem;
+}
+
+/* responsive */
+@media (max-width:426px) {
+    main .desc-section {
+        padding-top: 3rem;
+        text-align: center;
+        justify-content: flex-end;
+        padding-bottom:0 ;
+        height: 20vh;
+    }
+    
+    main p:last-child{
+        display: none;
+    }
+    .upload-wrap{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .upload-cloud{
+        width: 80%;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .desc-section h1{
+        font-size: 1.5rem;   
+        margin-top: 5rem;
+    }
+    .desc-section h3{
+        font-size: 0.9rem;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .upload a{
+        font-size: 1.3rem;
+        padding: 30px 95px;
+        text-align: center;
+        
+    }
+    .extra-detail{
+        font-size: 0.85rem;
+    }
+    .premium-sign{
+        background-color: rgb(255, 213, 0);
+        color: black;
+
+    }
+    .premium-sign img{
+        width: 20px;
+    }
+
+}

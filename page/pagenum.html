@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Merge PDF</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/tools1styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <script>
+        /* When the user clicks on the button 1, 
+        toggle between hiding and showing the dropdown content 1 */
+        function myFunction() {
+          var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          } else {
+            myDropdown.classList.add('show');
+          }
+        }
+    
+        /* When the user clicks on the button 2, 
+        toggle between hiding and showing the dropdown content 2 */
+        function myFunction2() {
+          var myDropdown2 = document.getElementById("myDropdown2");
+          if (myDropdown2.classList.contains('show')) {
+            myDropdown2.classList.remove('show');
+          } else {
+            myDropdown2.classList.add('show');
+          }
+        }
+        
+        /* When the user clicks on the button 3, 
+        toggle between hiding and showing the dropdown content 3 */
+        function myFunction3() {
+          var myDropdown3 = document.getElementById("myDropdown3");
+          if (myDropdown3.classList.contains('show')) {
+            myDropdown3.classList.remove('show');
+          } else {
+            myDropdown3.classList.add('show');
+          }
+        }
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn') && !event.target.matches('.dropbtn2')  && !event.target.matches('.dropbtn3')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+
+    var dropdowns2 = document.getElementsByClassName("dropdown-content2");
+    for (var i = 0; i < dropdowns2.length; i++) {
+      var openDropdown2 = dropdowns2[i];
+      if (openDropdown2.classList.contains('show')) {
+        openDropdown2.classList.remove('show');
+      }
+    }
+    
+    var dropdowns3 = document.getElementsByClassName("dropdown-content3");
+    for (var i = 0; i < dropdowns3.length; i++) {
+      var openDropdown3 = dropdowns3[i];
+      if (openDropdown3.classList.contains('show')) {
+        openDropdown3.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="../"><img src="https://www.ilovepdf.com/img/ilovepdf.svg" alt="ilovepdf-icon"></a>
+            <ul class="menulink">
+                <li><a href="merge.html">Merge PDF</a></li>
+                <li><a href="split.html">Split PDF</a></li>
+                <li><a href="">Compress PDF</a></li>
+                <li class="dropdown1">
+                    <button onclick="myFunction()" class="dropbtn">Convert PDF <ion-icon name="caret-down-outline"></ion-icon></button>
+                    <div id="myDropdown" class="dropdown-content1 dropdown-content">
+                        <div class="convert-left convert-tools">
+                            <p>CONVERT TO PDF</p>
+                            <ul>
+                                <li><a href="../page/jpgtopdf.html"><img src="../img/icon/jpg-to-pdf.png" alt="">JPG to PDF</a></li>
+                                <li><a href="../page/wordtopdf.html"><img src="../img/icon/word-to-pdf.png" alt="">WORD to PDF</a></li>
+                                <li><a href="../page/ppttopdf.html"><img src="../img/icon/ppt-to-pdf.png" alt="">POWERPOINT to PDF</a></li>
+                                <li><a href="../page/exltopdf.html"><img src="../img/icon/exl-to-pdf.png" alt="">EXCEL to PDF</a></li>
+                                <li><a href="../page/htmltopdf.html"><img src="../img/icon/htmll-to-pdf.png" alt="">HTML to PDF</a></li>
+                            </ul>
+                        </div>
+                        <div class="convert-right convert-tools">
+                            <P>CONVERT FROM PDF</P>
+                            <ul>
+                                <li><a href="../page/pdftojpg.html"><img src="../img/icon/pdf-to-jpg.png" alt="">PDF to JPG</a></li>
+                                <li><a href="../page/pdftoword.html"><img src="../img/icon/pdf-to-word.png" alt="">PDF to WORD</a></li>
+                                <li><a href="../page/pdftoppt.html"><img src="../img/icon/pdf-to-ppt.png" alt="">PDF to POWERPOINT</a></li>
+                                <li><a href="../page/pdftoexl.html"><img src="../img/icon/pdf-to-exl.png" alt="">PDF to EXCEL</a></li>
+                                <li><a href="../page/pdfa.html"><img src="../img/icon/pdf-to-pdfa.png" alt="">PDF to PDF/A</a></li>
+                            </ul>
+                        </div>
+                      </div>
+                </li>
+                <li class="dropdown2">
+                    <button onclick="myFunction2()" class="dropbtn2">All PDF Tools <ion-icon name="caret-down-outline"></ion-icon></button>
+                    <div id="myDropdown2" class="dropdown-content2 dropdown-content2" >
+                        <div class="convert1 convert-tools">
+                            <p>ORGANIZE PDF</p>
+                            <ul>
+                                <li><a href="../page/merge.html"><img src="../img/icon/merge.png" alt="">Merge PDF</a></li>
+                                <li><a href="../page/split.html"><img src="../img/icon/split.png" alt="">Split PDF</a></li>
+                                <li><a href="../page/removepg.html"><img src="../img/icon/ppt-to-pdf.png" alt="">Remove Pages</a></li>
+                                <li><a href="../page/extract.html"><img src="../img/icon/exl-to-pdf.png" alt="">Extract Pages</a></li>
+                                <li><a href="../page/organize.html"><img src="../img/icon/organize.png" alt="">Organize PDF</a></li>
+                                <li><a href="../page/scanpdf.html"><img src="../img/icon/scan.png" alt="">Scan to PDF</a></li>
+                            </ul>
+                        </div>
+                        <div class="convert2 convert-tools">
+                            <P>OPTIMIZE PDF</P>
+                            <ul>
+                                <li><a href="../page/compress.html"><img src="../img/icon/compress.png" alt="">Compress PDF</a></li>
+                                <li><a href="../page/repair.html"><img src="../img/icon/repair.png" alt="">Repair PDF</a></li>
+                                <li><a href="../page/ocrpdf.html"><img src="../img/icon/ocr.png" alt="">OCR PDF</a></li>
+                            </ul>
+                        </div>
+                        <div class="convert3 convert-tools">
+                            <p>CONVERT TO PDF</p>
+                            <ul>
+                                <li><a href="../page/jpgtopdf.html"><img src="../img/icon/jpg-to-pdf.png" alt="">JPG to PDF</a></li>
+                                <li><a href="../page/wordtopdf.html"><img src="../img/icon/word-to-pdf.png" alt="">WORD to PDF</a></li>
+                                <li><a href="../page/ppttopdf.html"><img src="../img/icon/ppt-to-pdf.png" alt="">POWERPOINT to PDF</a></li>
+                                <li><a href="../page/exltopdf.html"><img src="../img/icon/exl-to-pdf.png" alt="">EXCEL to PDF</a></li>
+                                <li><a href="../page/htmltopdf.html"><img src="../img/icon/htmll-to-pdf.png" alt="">HTML to PDF</a></li>
+                            </ul>
+                        </div>
+                        <div class="convert4 convert-tools">
+                            <P>CONVERT FROM PDF</P>
+                            <ul>
+                                <li><a href="../page/pdftojpg.html"><img src="../img/icon/pdf-to-jpg.png" alt="">PDF to JPG</a></li>
+                                <li><a href="../page/pdftoword.html"><img src="../img/icon/pdf-to-word.png" alt="">PDF to WORD</a></li>
+                                <li><a href="../page/pdftoppt.html"><img src="../img/icon/pdf-to-ppt.png" alt="">PDF to POWERPOINT</a></li>
+                                <li><a href="../page/pdftoexl.html"><img src="../img/icon/pdf-to-exl.png" alt="">PDF to EXCEL</a></li>
+                                <li><a href="../page/pdfa.html"><img src="../img/icon/pdf-to-pdfa.png" alt="">PDF to PDF/A</a></li>
+                            </ul>
+                        </div>
+                        <div class="convert5 convert-tools">
+                            <p>EDIT PDF</p>
+                            <ul>
+                                <li><a href="../page/rotatepdf.html"><img src="../img/icon/rotate.png" alt="">Rotate PDF</a></li>
+                                <li><a href="../page/pagenum.html"><img src="../img/icon/page-number.png" alt="">Add Page Numbers</a></li>
+                                <li><a href="../page/watermark.html"><img src="../img/icon/watermark.png" alt="">Add Watermark</a></li>
+                                <li><a href="../page/editpdf.html"><img src="../img/icon/edit.png" alt="">Edit PDF</a></li>
+                                <li><a href=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="convert6 convert-tools">
+                            <p>PDF SECURITY</p>
+                            <ul>
+                                <li><a href="../page/unlock.html"><img src="../img/icon/unlock.png" alt="">Unlock PDF</a></li>
+                                <li><a href="../page/protect.html"><img src="../img/icon/protect.png" alt="">Protect PDF</a></li>
+                                <li><a href="../page/signpdf.html"><img src="../img/icon/sign.png" alt="">Sign PDF</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>  
+        </div>
+        <div class="nav-mobile">
+        </div>
+        <div class="nav-right">
+            <a href=""><img src="../img/icon/wrench-alt.svg" alt="tools" class="tools"></a>
+            <a href=""><img src="../img/icon/circle-user.png" alt="user-info" class="user-info"></a>
+            <a href="" class="pc-download"><img src="../img/icon/icon-web.png" alt="pc-download"></a>
+            <a href="" >Login</a>
+            <a href="" class="signup">sign up</a>
+            <button onclick="myFunction3()" class="dropbtn3"><img src="../img/icon/menu.png" alt="menu" class="menu"></button>
+            <div id="myDropdown3" class="dropdown-content3 dropdown-content2" >
+                <ul class="sub-menu">
+                    <li>Home</li>
+                    <li>Product</li>
+                    <li>Solutions</li>
+                    <li>Pricing</li>
+                    <li>Language</li>
+                    <li>Help</li>
+                    <li>iLoveimg</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="desc-section">
+            <h1>Add PDF page numbers</h1>
+            <h3>Add page numbers into PDFs with ease. Choose your positions, dimensions, typography.</h3>
+        </div>
+        <div class="upload-wrap">
+            <div class="upload"><a href="">Add HTML</a></div>
+            <div class="upload-cloud">
+                <a href=""><img src="../img/icon/google-drive.png" alt="google-drive"></a>
+                <a href=""><img src="../img/icon/dropbox.png" alt="dropbox"></a>
+            </div>
+        </div>  
+        <p>or drop PDFs here</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iLovePDF</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <script>
+        /* When the user clicks on the button 1, 
+        toggle between hiding and showing the dropdown content 1 */
+        function myFunction() {
+          var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          } else {
+            myDropdown.classList.add('show');
+          }
+        }
+    
+        /* When the user clicks on the button 2, 
+        toggle between hiding and showing the dropdown content 2 */
+        function myFunction2() {
+          var myDropdown2 = document.getElementById("myDropdown2");
+          if (myDropdown2.classList.contains('show')) {
+            myDropdown2.classList.remove('show');
+          } else {
+            myDropdown2.classList.add('show');
+          }
+        }
+    
+        /* When the user clicks on the button 3, 
+        toggle between hiding and showing the dropdown content 3 */
+        function myFunction3() {
+          var myDropdown3 = document.getElementById("myDropdown3");
+          if (myDropdown3.classList.contains('show')) {
+            myDropdown3.classList.remove('show');
+          } else {
+            myDropdown3.classList.add('show');
+          }
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn') && !event.target.matches('.dropbtn2') && !event.target.matches('.dropbtn3')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+
+    var dropdowns2 = document.getElementsByClassName("dropdown-content2");
+    for (var i = 0; i < dropdowns2.length; i++) {
+      var openDropdown2 = dropdowns2[i];
+      if (openDropdown2.classList.contains('show')) {
+        openDropdown2.classList.remove('show');
+      }
+    }
+    var dropdowns3 = document.getElementsByClassName("dropdown-content3");
+    for (var i = 0; i < dropdowns3.length; i++) {
+      var openDropdown3 = dropdowns3[i];
+      if (openDropdown3.classList.contains('show')) {
+        openDropdown3.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="../"><img src="https://www.ilovepdf.com/img/ilovepdf.svg" alt="ilovepdf-icon"></a>
+            <ul class="menulink">
+                <li><a href="merge.html">Merge PDF</a></li>
+                <li><a href="split.html">Split PDF</a></li>
+                <li><a href="">Compress PDF</a></li>
+                <li class="dropdown1">
+                    <button onclick="myFunction()" class="dropbtn">Convert PDF <ion-icon name="caret-down-outline"></ion-icon></button>
+                    <div id="myDropdown" class="dropdown-content1 dropdown-content">
+                        <div class="convert-left convert-tools">
+                            <p>CONVERT TO PDF</p>
+                            <ul>
+                                <li><a href="../page/jpgtopdf.html"><img src="../img/icon/jpg-to-pdf.png" alt="">JPG to PDF</a></li>
+                                <li><a href="../page/wordtopdf.html"><img src="../img/icon/word-to-pdf.png" alt="">WORD to PDF</a></li>
+                                <li><a href="../page/ppttopdf.html"><img src="../img/icon/ppt-to-pdf.png" alt="">POWERPOINT to PDF</a></li>
+                                <li><a href="../page/exltopdf.html"><img src="../img/icon/exl-to-pdf.png" alt="">EXCEL to PDF</a></li>
+                                <li><a href="../page/htmltopdf.html"><img src="../img/icon/htmll-to-pdf.png" alt="">HTML to PDF</a></li>
+                            </ul>
+                        </div>
+                        <div class="convert-right convert-tools">
+                            <P>CONVERT FROM PDF</P>
+                            <ul>
+                                <li><a href="../page/pdftojpg.html"><img src="../img/icon/pdf-to-jpg.png" alt="">PDF to JPG</a></li>
+                                <li><a href="../page/pdftoword.html"><img src="../img/icon/pdf-to-word.png" alt="">PDF to WORD</a></li>
+                                <li><a href="../page/pdftoppt.html"><img src="../img/icon/pdf-to-ppt.png" alt="">PDF to POWERPOINT</a></li>
+                                <li><a href="../page/pdftoexl.html"><img src="../img/icon/pdf-to-exl.png" alt="">PDF to EXCEL</a></li>
+                                <li><a href="../page/pdfa.html"><img src="../img/icon/pdf-to-pdfa.png" alt="">PDF to PDF/A</a></li>
+                            </ul>
+                        </div>
+                      </div>
+                </li>
+                <li class="dropdown2">
+                    <button onclick="myFunction2()" class="dropbtn2">All PDF Tools <ion-icon name="caret-down-outline"></ion-icon></button>
+                    <div id="myDropdown2" class="dropdown-content2 dropdown-content2" >
+                        <div class="convert1 convert-tools">
+                            <p>ORGANIZE PDF</p>
+                            <ul>
+                                <li><a href="../page/merge.html"><img src="../img/icon/merge.png" alt="">Merge PDF</a></li>
+                                <li><a href="../page/split.html"><img src="../img/icon/split.png" alt="">Split PDF</a></li>
+                                <li><a href="../page/removepg.html"><img src="../img/icon/ppt-to-pdf.png" alt="">Remove Pages</a></li>
+                                <li><a href="../page/extract.html"><img src="../img/icon/exl-to-pdf.png" alt="">Extract Pages</a></li>
+                                <li><a href="../page/organize.html"><img src="../img/icon/organize.png" alt="">Organize PDF</a></li>
+                                <li><a href="../page/scanpdf.html"><img src="../img/icon/scan.png" alt="">Scan to PDF</a></li>
+                            </ul>
+                        </div>
+                        <div class="convert2 convert-tools">
+                            <P>OPTIMIZE PDF</P>
+                            <ul>
+                                <li><a href="../page/compress.html"><img src="../img/icon/compress.png" alt="">Compress PDF</a></li>
+                                <li><a href="../page/repair.html"><img src="../img/icon/repair.png" alt="">Repair PDF</a></li>
+                                <li><a href="../page/ocrpdf.html"><img src="../img/icon/ocr.png" alt="">OCR PDF</a></li>
+                            </ul>
+                        </div>
+                        <div class="convert3 convert-tools">
+                            <p>CONVERT TO PDF</p>
+                            <ul>
+                                <li><a href="../page/jpgtopdf.html"><img src="../img/icon/jpg-to-pdf.png" alt="">JPG to PDF</a></li>
+                                <li><a href="../page/wordtopdf.html"><img src="../img/icon/word-to-pdf.png" alt="">WORD to PDF</a></li>
+                                <li><a href="../page/ppttopdf.html"><img src="../img/icon/ppt-to-pdf.png" alt="">POWERPOINT to PDF</a></li>
+                                <li><a href="../page/exltopdf.html"><img src="../img/icon/exl-to-pdf.png" alt="">EXCEL to PDF</a></li>
+                                <li><a href="../page/htmltopdf.html"><img src="../img/icon/htmll-to-pdf.png" alt="">HTML to PDF</a></li>
+                            </ul>
+                        </div>
+                        <div class="convert4 convert-tools">
+                            <P>CONVERT FROM PDF</P>
+                            <ul>
+                                <li><a href="../page/pdftojpg.html"><img src="../img/icon/pdf-to-jpg.png" alt="">PDF to JPG</a></li>
+                                <li><a href="../page/pdftoword.html"><img src="../img/icon/pdf-to-word.png" alt="">PDF to WORD</a></li>
+                                <li><a href="../page/pdftoppt.html"><img src="../img/icon/pdf-to-ppt.png" alt="">PDF to POWERPOINT</a></li>
+                                <li><a href="../page/pdftoexl.html"><img src="../img/icon/pdf-to-exl.png" alt="">PDF to EXCEL</a></li>
+                                <li><a href="../page/pdfa.html"><img src="../img/icon/pdf-to-pdfa.png" alt="">PDF to PDF/A</a></li>
+                            </ul>
+                        </div>
+                        <div class="convert5 convert-tools">
+                            <p>EDIT PDF</p>
+                            <ul>
+                                <li><a href="../page/rotatepdf.html"><img src="../img/icon/rotate.png" alt="">Rotate PDF</a></li>
+                                <li><a href="../page/pagenum.html"><img src="../img/icon/page-number.png" alt="">Add Page Numbers</a></li>
+                                <li><a href="../page/watermark.html"><img src="../img/icon/watermark.png" alt="">Add Watermark</a></li>
+                                <li><a href="../page/editpdf.html"><img src="../img/icon/edit.png" alt="">Edit PDF</a></li>
+                                <li><a href=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="convert6 convert-tools">
+                            <p>PDF SECURITY</p>
+                            <ul>
+                                <li><a href="../page/unlock.html"><img src="../img/icon/unlock.png" alt="">Unlock PDF</a></li>
+                                <li><a href="../page/protect.html"><img src="../img/icon/protect.png" alt="">Protect PDF</a></li>
+                                <li><a href="../page/signpdf.html"><img src="../img/icon/sign.png" alt="">Sign PDF</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>  
+        </div>
+        <div class="nav-mobile">
+        </div>
+        <div class="nav-right">
+            <a href=""><img src="img/icon/wrench-alt.svg" alt="tools" class="tools"></a>
+            <a href=""><img src="img/icon/circle-user.png" alt="user-info" class="user-info"></a>
+            <a href="" class="pc-download"><img src="img/icon/icon-web.png" alt="pc-download"></a>
+            <a href="" >Login</a>
+            <a href="" class="signup">sign up</a>
+            <button onclick="myFunction3()" class="dropbtn3"><img src="img/icon/menu.png" alt="menu" class="menu"></button>
+            <div id="myDropdown3" class="dropdown-content3 dropdown-content2" >
+                <ul class="sub-menu">
+                    <li>Home</li>
+                    <li>Product</li>
+                    <li>Solutions</li>
+                    <li>Pricing</li>
+                    <li>Language</li>
+                    <li>Help</li>
+                    <li>iLoveimg</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div id="welcome-section">
+            <h1>Every tool you need to work with PDFs in one place</h1>
+            <h3>Every tool you need to use PDFs, at your fingertips. All are 100% FREE and easy to use! Merge, split, compress, convert, rotate, unlock and watermark PDFs with just a few clicks.</h3>
+        </div>
+        <div id="tools">
+            <div id="tools-container">
+                <div class="basket">
+                    <div class="pdf-tools">
+                        <a href="page/merge.html">
+                        <img src="img/icon/merge.png" alt="merge pdf">
+                        <h3>Merge PDF</h3>
+                        <p>Combine PDF's in the order you want with the easiest PDF merger avaible</p></a>
+                    </div>
+                    <div class="pdf-tools">
+                        <a href="page/split.html">
+                        <img src="img/icon/split.png" alt="split pdf">
+                        <h3>Split PDF</h3>
+                        <p>Separate one page or a whole set for easy conversion into independent PDF files.</p></a>
+                    </div>
+                    <div class="pdf-tools">
+                        <a href="page/compress.html">
+                            <img src="img/icon/compress.png" alt="compress pdf">
+                        <h3>Compress PDF</h3>
+                        <p>Reduce file size while optimizing for maximal PDF quality.</p></a>
+                    </div>
+                    <div class="pdf-tools">
+                        <a href="page/pdftoword.html">
+                            <img src="img/icon/pdf-to-word.png" alt="pdf to word">
+                        <h3>PDF to Word</h3>
+                        <p>Easily convert your PDF files into easy to edit DOC and DOCX documents. The converted WORD document is almost 100% accurate.</p></a>
+                    </div>
+                    <div class="pdf-tools">
+                        <a href="page/pdftoppt.html">
+                            <img src="img/icon/pdf-to-ppt.png" alt="pdf to powerpoint">
+                        <h3>PDF to PowerPoint</h3>
+                        <p>Turn your PDF files into easy to edit PPT and PPTX slideshows.</p></a>
+                    </div>
+                    <div class="pdf-tools">
+                        <a href="page/pdftoexl.html">
+                            <img src="img/icon/pdf-to-exl.png" alt="pdf to excel">
+                        <h3>PDF to Excel</h3>
+                        <p>Pull data straight from PDF's into Excel spreadsheets in a few short seconds</p></a>
+                    </div>
+                    <div class="pdf-tools">
+                        <a href="page/wordtopdf.html">
+                            <img src="img/icon/word-to-pdf.png" alt="word to pdf">
+                        <h3>Word to PDf</h3>
+                        <p>Make DOC and DOCX easy to read by converting them to PDF.</p></a>
+                    </div>
+                    <div class="pdf-tools">
+                        <a href="../page/ppttopdf.html">
+                            <img src="img/icon/ppt-to-pdf.png" alt="powerpoint to pdf">
+                        <h3>PowerPoint to PDf</h3>
+                        <p>Make PPT and PPTX slideshows easy to view by converting them to PDF.</p></a>
+                    </div>
+                    <div class="pdf-tools">
+                        <a href="../page/exltopdf.html">
+                            <img src="img/icon/exl-to-pdf.png" alt="excel to pdf">
+                        <h3>Excel to PDf</h3>
+                        <p>Make EXCEL spreadsheets easy to read by converting them to PDF.</p></a>
+                    </div>
+                    <div class="pdf-tools">
+                        <a href="page/editpdf.html">
+                            <img src="img/icon/edit.png" alt="edit pdf">
+                        <h3>Edit PDf</h3>
+                        <p>Add text, images, shapes, or freehand annotations to a PDF document. Edit the size font and color of the added content.</p></a>
+                    </div>
+                    <div class="pdf-tools">
+                        <a href="page/pdftojpg.html">
+                            <img src="img/icon/pdf-to-jpg.png" alt="pdf to jpg">
+                        <h3>PDf to JPG</h3>
+                        <p>Convert each PDF page into a JPG or extract all images contained in a PDF.</p></a>
+                    </div>
+                    <div class="pdf-tools">
+                        <a href="page/jpgtopdf.html">
+                            <img src="img/icon/jpg-to-pdf.png" alt="jpg to pdf">
+                        <h3>JPG to PDf</h3>
+                        <p>Convert JPG images to a PDF in seconds. Easily adjust orientation and margins.</p></a>
+                    </div>
+                    <div class="pdf-tools">
+                        <a href="page/signpdf.html">
+                            <img src="img/icon/sign.png" alt="sign pdf"> 
+                        <h3>Sign PDf</h3>
+                        <p>Sign yourseld or request electronic signature from others.</p></a>
+                    </div>
+                    <div class="pdf-tools">
+                        <a href="page/watermark.html">
+                        <img src="img/icon/watermark.png" alt="watermark pdf"> 
+                        <h3>Watermark</h3>
+                        <p>Stamp an image or text over your PDF in seconds. Chooes the typography, transparency, and position.</p></a>
+                    </div>
+                    <div class="pdf-tools">
+                        <a href="page/rotatepdf.html">
+                            <img src="img/icon/rotate.png" alt="rotate pdf">
+                        <h3>Rotate PDF</h3>
+                        <p>Rotate your PDFs the way you need thhem. You can even rotate multiple PDFs at once!</p></a>
+                    </div>
+                    <div class="pdf-tools">
+                        <a href="page/htmltopdf.html">
+                            <img src="img/icon/htmll-to-pdf.png" alt=""> 
+                        <h3>HTML to PDf</h3>
+                        <p>Convert webpages in HTML to PDF. Copy and paste the URL of the page you want and convert it to PDF with a click.</p></a>
+                    </div>
+                    <div class="pdf-tools">
+                        <a href="page/unlock.html">
+                         <img src="img/icon/unlock.png" alt="unlock pdf">
+                        <h3>Unlock PDf</h3>
+                        <p>Remove PDF password security, giving you the freedom to use your PDFs as you want.</p></a>
+                    </div>
+                    <div class="pdf-tools">
+                        <a href="page/protect.html">
+                            <img src="img/icon/protect.png" alt="protect pdf"> 
+                        <h3>Protect PDf</h3>
+                        <p>Protect PDF files with a password. Encrypt PDF documents to prevent unathorized access.</p></a>
+                    </div>
+                    <div class="pdf-tools">
+                        <a href="page/organize.html"> 
+                            <img src="img/icon/organize.png" alt="organize pdf">
+                        <h3>Organize PDf</h3>
+                        <p>Sort pages of your PDF file however you like. Delete PDF pages or add PDF pages to your document at your convenience.</p></a>
+                    </div>
+                    <div class="pdf-tools">
+                        <a href="page/pdfa.html">
+                            <img src="img/icon/pdf-to-pdfa.png" alt="pdf to pdfa"> 
+                        <h3>PDf to PDf/A</h3>
+                        <p>Transform your PDF to PDF/A, the ISO-standarized version of the PDF for long-term archiving. Your PDF will preserve formatting when accessed in the future.</p></a>
+                    </div>
+                    <div class="pdf-tools">
+                        <a href="page/repair.html">
+                            <img src="img/icon/repair.png" alt="repair pdf"> 
+                        <h3>Repair PDf</h3>
+                        <p>Repair a damaged PDF and recover data from corrupt PDF. Fix PDf files with our Repair tool.</p></a>
+                    </div>
+                    <div class="pdf-tools">
+                        <a href="page/pagenum.html"> 
+                            <img src="img/icon/page-number.png
+                            " alt="">
+                        <h3>Page nunbers</h3>
+                        <p>Page numbers add page numbers into PDFs with ease. Choose your positions, dimensions, typography.</p></a>
+                    </div>
+                    <div class="pdf-tools">
+                        <a href="page/scanpdf.html"> 
+                            <img src="img/icon/scan.png" alt="scan pdf">
+                        <h3>Scan to PDF</h3>
+                        <p>Capture document scans from your mobile device and send them instantly to your browser.</p></a>
+                    </div>
+                    <div class="pdf-tools">
+                        <a href="page/ocrpdf.html"> 
+                            <img src="img/icon/ocr.png" alt="ocr pdf">
+                        <h3>OCR PDF</h3>
+                        <p>Easily convert scanned PDF into searchable documents.</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="detail-plus">
+            <div class="outer-wrapper">
+                <h1>Looking for another solution?</h1>
+                <div class="detail-wrapper">
+                    <div class="detail">
+                        <h2>iLovePDF Desktop</h2>
+                        <p>Download the iLovePDF Desktop App to work with your favorite PDF tools on your Mac or Windows PC. Get a lightweight PDF app that helps you process heavy PDF tasks offline in seconds.</p>
+                    </div>
+                    <div class="detail">
+                        <h2>iLovePDF Mobile</h2>
+                        <p>Get the iLovePDF Mobile App to manage documents remotely or on the move. Turn your Android or iPhone device into a PDF Editor & Scanner to annotate, sign, and share documents with ease.</p>
+                    </div>
+                    <div class="detail">
+                        <h2>iLoveIMG</h2>
+                        <p>iLoveIMG is the web app that helps you modify images in bulk for free. Crop, resize, compress, convert, and more. All the tools you need to enhance your images in just a few clicks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="standard">
+            <h1>The PDF software trusted by millions of users</h1>
+            <p>iLovePDF is your number one web app for editing PDF with ease. Enjoy all the tools you need to work efficiently with your digital documents while keeping your data safe and secure.</p>
+            <div class="standard-wrap">
+                <img width=55 src="img/icon/pdf-association-logo.svg" alt="pdf association-logo">
+                <img  width=67 src="img/icon/iso-logo.svg" alt="iso logo">
+                <img   width=89 src="img/icon/ssl-encrypted-logo.svg" alt="ssl-encrypted-logo">
+            </div>
+        </section>
+        <section id="offer" >
+            <div id="offer-wrap" >
+                <div class="desc-offer offer-info">
+                    <h1>Get more with Premium</h1>
+                    <h2>Complete projects faster with batch file processing, convert scanned documents with OCR and e-sign your business agreements.</h2>
+                    <a href="" class="btn">Get Premium</a>
+                </div>
+                <div class="offer-img offer-info">
+                    <img src="img/decor1.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="footer-wrap">
+            <div id="information">
+                <div class="out-link">
+                    <h2>ILOVEPDF</h2>
+                        <ul>
+                            <li><a href="https://www.ilovepdf.com/" target="_blank">Home</a></li>
+                            <li><a href="https://www.ilovepdf.com/features" target="_blank">Feature</a></li>
+                            <li><a href="https://www.ilovepdf.com/pricing" target="_blank">Pricing</a></li>
+                            <li><a href="https://www.ilovepdf.com/help/documentation" target="_blank">Tools</a></li>
+                            <li><a href="https://www.ilovepdf.com/help/faq" target="_blank">FAQ</a></li>
+                        </ul>
+                </div>
+                <div class="out-link">
+                    <h2>PRODUCT</h2>
+                        <ul>
+                            <li><a href="https://www.ilovepdf.com/desktop" target="_blank">iLovePDF Desktop</a></li>
+                            <li><a href="https://www.ilovepdf.com/desktop" target="_blank">iLovePDF</a></li>
+                            <li><a href="https://developer.ilovepdf.com/" target="_blank">Developers</a></li>
+                            <li><a href="https://developer.ilovepdf.com/" target="_blank">Wordpress Plugin</a></li>
+                            <li><a href="https://developer.ilovepdf.com/" target="_blank">iLoveimg.com</a></li>
+                        </ul>
+                </div>
+                <div class="out-link">
+                    <h2>SOLUTIONS</h2>
+                        <ul>
+                            <li><a href="https://developer.ilovepdf.com/" target="_blank">Business</a></li>
+                            <li><a href="https://www.ilovepdf.com/education" target="_blank">Education</a></li>
+                        </ul>
+                </div>
+                <div class="out-link">
+                    <h2>COMPANY</h2>
+                        <ul>
+                            <li><a href="https://www.ilovepdf.com/help/about" target="_blank">Our Story</a></li>
+                            <li><a href="https://www.ilovepdf.com/blog" target="_blank">Blog</a></li>
+                            <li><a href="https://www.ilovepdf.com/press" target="_blank">Press</a></li>
+                            <li><a href="https://www.ilovepdf.com/help/legal" target="_blank">Legal & Privacy</a></li>
+                            <li><a href="https://www.ilovepdf.com/contact" target="_blank">Contact</a></li>
+                        </ul>
+                </div>
+            </div>
+            <div class="info-img">
+                <ul>
+                    <li>
+                    <a  target="_blank" href='https://play.google.com/store/apps/details?id=com.ilovepdf.www&pli=1&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='img/icon/Google_Play_Store_badge_EN.svg'/></a></li>
+                    <li><a href="https://itunes.apple.com/es/app/ilovepdf/id1207332399?mt=8" target="_blank"><img src="img/icon/Download_on_the_App_Store_Badge.svg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="extra">
+                <div class="language"><a href=""><ion-icon name="globe-outline" class="web"></ion-icon><p>English</p><ion-icon name="caret-down-outline"></ion-icon></a></div>
+                <div class="social">
+                    <p>© iLovePDF 2023 ® - Your PDF Editor
+                    </p>
+                    <ul>
+                        <li><a href="https://twitter.com/iloveimg_com"><img src="img/icon/twitter.png" alt="twitter"></a></li>
+                        <li><a href=https://www.facebook.com/iloveimgcom/""><img src="img/icon/facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://www.linkedin.com/company/ilovepdf/"><img src="img/icon/linkedin.png" alt="linkedin"></a></li>
+                        <li><a href="https://www.instagram.com/ilovepdf_official/"><img src="img/icon/instagram.png" alt="instagram"></a></li>
+                        <li><a href="https://www.tiktok.com/@ilovepdf_official"><img src="img/icon/tik-tok.png" alt="tik-tok"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
