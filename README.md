@@ -26,5 +26,7 @@ In this repsitory it has a couple of folder and sub-folder, as you can see on th
 # How to run
 To run the website you can visit the [website](https://omega24rofi.github.io/GDSC-IlovePDF-ROFI/) or if you curious about the code of the file you can see the file on this repository in index.html, and page folder, and also you can see the code of the styling sheer in styles.css and styles folder. If you want to see the image and icon that been used in the website you can check the img folder.
 
+**note : there is some link that i have use is linked to the original website for example all the element in the footer section is linked to the original iLovePDF website.
+
 # Reference
 For the original website itself you can visit [iLovePDF](https://www.ilovepdf.com/)
